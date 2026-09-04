@@ -8,6 +8,7 @@ const app = express();
 app.use(cors());
 app.use(express.json());
 
+// PostgreSQL connection
 const pool = new Pool({
     connectionString: process.env.DATABASE_URL,
     ssl: {
